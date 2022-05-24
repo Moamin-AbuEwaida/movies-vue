@@ -1,13 +1,17 @@
 {
+  "homepage": "http://moamin-abuewaida.github.io/movies-vue",
   "name": "movies-vue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "gh-pages": "^4.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
